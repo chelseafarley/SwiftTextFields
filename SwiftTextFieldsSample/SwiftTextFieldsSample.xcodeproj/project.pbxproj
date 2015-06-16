@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0300F41B2FFC2A008DE55A /* SwiftTextFields.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */; };
+		5E0300F51B2FFC2A008DE55A /* SwiftTextFields.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EC5BDE21B25A1D40007E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE11B25A1D40007E286 /* AppDelegate.swift */; };
 		5EC5BDE41B25A1D50007E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE31B25A1D50007E286 /* ViewController.swift */; };
 		5EC5BDE71B25A1D50007E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE51B25A1D50007E286 /* Main.storyboard */; };
@@ -25,7 +27,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5EC5BE3A1B26D6350007E286 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E0300F51B2FFC2A008DE55A /* SwiftTextFields.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftTextFields.framework; sourceTree = "<group>"; };
 		5EC5BDDC1B25A1D40007E286 /* SwiftTextFieldsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTextFieldsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC5BDE01B25A1D40007E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC5BDE11B25A1D40007E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0300F41B2FFC2A008DE55A /* SwiftTextFields.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		5EC5BDD31B25A1D40007E286 = {
 			isa = PBXGroup;
 			children = (
+				5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */,
 				5EC5BDDE1B25A1D40007E286 /* SwiftTextFieldsSample */,
 				5EC5BDF41B25A1D50007E286 /* SwiftTextFieldsSampleTests */,
 				5EC5BDDD1B25A1D40007E286 /* Products */,
@@ -122,6 +141,7 @@
 				5EC5BDD81B25A1D40007E286 /* Sources */,
 				5EC5BDD91B25A1D40007E286 /* Frameworks */,
 				5EC5BDDA1B25A1D40007E286 /* Resources */,
+				5EC5BE3A1B26D6350007E286 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftTextFieldsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftTextFieldsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +441,7 @@
 				5EC5BDFD1B25A1D50007E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EC5BDFE1B25A1D50007E286 /* Build configuration list for PBXNativeTarget "SwiftTextFieldsSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +450,7 @@
 				5EC5BE001B25A1D50007E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

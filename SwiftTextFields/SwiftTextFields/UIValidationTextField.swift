@@ -16,7 +16,7 @@ public class UIValidationTextField: UITextField {
         return isValid
     }
     
-    func showOrHideOverlay() {
+    public func showOrHideOverlay() {
         if (isValid && rightView != nil) {
             rightView = nil
             rightViewMode = UITextFieldViewMode.Never

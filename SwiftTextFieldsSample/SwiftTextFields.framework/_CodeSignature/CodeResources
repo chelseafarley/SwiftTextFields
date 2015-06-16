@@ -14,7 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q533GM7Uzj+cwFD/bTYoPgvAccg=
+		noE9Qk+wchFNtlJXavGbutN1MqI=
+		</data>
+		<key>Modules/SwiftTextFields.swiftmodule/arm.swiftdoc</key>
+		<data>
+		x3TtWxuQyin6o2J1Lfo9dFyhffI=
+		</data>
+		<key>Modules/SwiftTextFields.swiftmodule/arm.swiftmodule</key>
+		<data>
+		1k6HNixW3T+DE9opOAkikycLvhM=
 		</data>
 		<key>Modules/SwiftTextFields.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,6 +46,14 @@
 		<key>Headers/SwiftTextFields.h</key>
 		<data>
 		/DX5ObgLvcZV7vWp3/ql215baz4=
+		</data>
+		<key>Modules/SwiftTextFields.swiftmodule/arm.swiftdoc</key>
+		<data>
+		x3TtWxuQyin6o2J1Lfo9dFyhffI=
+		</data>
+		<key>Modules/SwiftTextFields.swiftmodule/arm.swiftmodule</key>
+		<data>
+		1k6HNixW3T+DE9opOAkikycLvhM=
 		</data>
 		<key>Modules/SwiftTextFields.swiftmodule/arm64.swiftdoc</key>
 		<data>

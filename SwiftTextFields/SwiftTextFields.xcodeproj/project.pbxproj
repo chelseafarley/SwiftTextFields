@@ -6,10 +6,27 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5E0300EB1B2FF5A6008DE55A /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E0300EE1B2FF5A6008DE55A /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				5E0300EF1B2FF5CB008DE55A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5EC5BE191B26D3DF0007E286 /* SwiftTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EC5BE181B26D3DF0007E286 /* SwiftTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EC5BE1F1B26D3DF0007E286 /* SwiftTextFields.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC5BE131B26D3DF0007E286 /* SwiftTextFields.framework */; };
-		5EC5BE261B26D3DF0007E286 /* SwiftTextFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BE251B26D3DF0007E286 /* SwiftTextFieldsTests.swift */; };
+		5EC5BE321B26D48D0007E286 /* NumericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BE2F1B26D48D0007E286 /* NumericTextField.swift */; };
+		5EC5BE331B26D48D0007E286 /* UIOverlayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BE301B26D48D0007E286 /* UIOverlayLabel.swift */; };
+		5EC5BE341B26D48D0007E286 /* UIValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BE311B26D48D0007E286 /* UIValidationTextField.swift */; };
+		5EC5BE361B26D4990007E286 /* CompulsoryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BE351B26D4990007E286 /* CompulsoryTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +44,10 @@
 		5EC5BE171B26D3DF0007E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC5BE181B26D3DF0007E286 /* SwiftTextFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTextFields.h; sourceTree = "<group>"; };
 		5EC5BE1E1B26D3DF0007E286 /* SwiftTextFieldsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTextFieldsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EC5BE241B26D3DF0007E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EC5BE251B26D3DF0007E286 /* SwiftTextFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTextFieldsTests.swift; sourceTree = "<group>"; };
+		5EC5BE2F1B26D48D0007E286 /* NumericTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericTextField.swift; sourceTree = "<group>"; };
+		5EC5BE301B26D48D0007E286 /* UIOverlayLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIOverlayLabel.swift; sourceTree = "<group>"; };
+		5EC5BE311B26D48D0007E286 /* UIValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIValidationTextField.swift; sourceTree = "<group>"; };
+		5EC5BE351B26D4990007E286 /* CompulsoryTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompulsoryTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				5EC5BE151B26D3DF0007E286 /* SwiftTextFields */,
-				5EC5BE221B26D3DF0007E286 /* SwiftTextFieldsTests */,
 				5EC5BE141B26D3DF0007E286 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +89,10 @@
 		5EC5BE151B26D3DF0007E286 /* SwiftTextFields */ = {
 			isa = PBXGroup;
 			children = (
+				5EC5BE2F1B26D48D0007E286 /* NumericTextField.swift */,
+				5EC5BE351B26D4990007E286 /* CompulsoryTextField.swift */,
+				5EC5BE301B26D48D0007E286 /* UIOverlayLabel.swift */,
+				5EC5BE311B26D48D0007E286 /* UIValidationTextField.swift */,
 				5EC5BE181B26D3DF0007E286 /* SwiftTextFields.h */,
 				5EC5BE161B26D3DF0007E286 /* Supporting Files */,
 			);
@@ -81,23 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				5EC5BE171B26D3DF0007E286 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5EC5BE221B26D3DF0007E286 /* SwiftTextFieldsTests */ = {
-			isa = PBXGroup;
-			children = (
-				5EC5BE251B26D3DF0007E286 /* SwiftTextFieldsTests.swift */,
-				5EC5BE231B26D3DF0007E286 /* Supporting Files */,
-			);
-			path = SwiftTextFieldsTests;
-			sourceTree = "<group>";
-		};
-		5EC5BE231B26D3DF0007E286 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EC5BE241B26D3DF0007E286 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,6 +166,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Trip Wire";
 				TargetAttributes = {
+					5E0300EB1B2FF5A6008DE55A = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					5EC5BE121B26D3DF0007E286 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -183,6 +191,7 @@
 			targets = (
 				5EC5BE121B26D3DF0007E286 /* SwiftTextFields */,
 				5EC5BE1D1B26D3DF0007E286 /* SwiftTextFieldsTests */,
+				5E0300EB1B2FF5A6008DE55A /* Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -204,11 +213,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E0300EF1B2FF5CB008DE55A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#CONFIG=${CONFIGURATION}\nCONFIG=Release\n\n# Step 1. Make sure the output directory exists\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIG}-universal\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIG} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIG} -sdk iphonesimulator -arch x86_64 -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 3. Copy the framework structure to the universal folder. Subsequently copy the files of the swiftmodule (in Modules directory) of -iphonesimulator to the swiftmodule of universal framework directory.\n\ncp -R \"${BUILD_DIR}/${CONFIG}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\ncp -R \"${BUILD_DIR}/${CONFIG}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\n\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIG}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIG}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EC5BE0E1B26D3DF0007E286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC5BE341B26D48D0007E286 /* UIValidationTextField.swift in Sources */,
+				5EC5BE321B26D48D0007E286 /* NumericTextField.swift in Sources */,
+				5EC5BE361B26D4990007E286 /* CompulsoryTextField.swift in Sources */,
+				5EC5BE331B26D48D0007E286 /* UIOverlayLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC5BE261B26D3DF0007E286 /* SwiftTextFieldsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +259,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5E0300EC1B2FF5A6008DE55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E0300ED1B2FF5A6008DE55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5EC5BE271B26D3DF0007E286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +354,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -323,6 +366,7 @@
 		5EC5BE2A1B26D3DF0007E286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +376,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5EC5BE2B1B26D3DF0007E286 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -383,6 +429,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E0300EE1B2FF5A6008DE55A /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E0300EC1B2FF5A6008DE55A /* Debug */,
+				5E0300ED1B2FF5A6008DE55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5EC5BE0D1B26D3DF0007E286 /* Build configuration list for PBXProject "SwiftTextFields" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -399,6 +453,7 @@
 				5EC5BE2B1B26D3DF0007E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EC5BE2C1B26D3DF0007E286 /* Build configuration list for PBXNativeTarget "SwiftTextFieldsTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +462,7 @@
 				5EC5BE2E1B26D3DF0007E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
