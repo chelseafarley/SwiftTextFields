@@ -1,0 +1,10 @@
+framework module SwiftTextFields {
+  umbrella header "SwiftTextFields.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftTextFields.Swift {
+    header "SwiftTextFields-Swift.h"
+}
