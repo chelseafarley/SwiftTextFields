@@ -20,7 +20,7 @@ public class UIOverlayLabel: UILabel {
         super.init(frame: frame)
     }
     
-    convenience init(bounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
+    convenience public init(bounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
         message: String, font: UIFont, textXMargin: CGFloat) {
         self.init(frame: bounds)
         self.textColor = textColor
@@ -30,7 +30,7 @@ public class UIOverlayLabel: UILabel {
         self.xMargin = textXMargin
     }
     
-    convenience init(bounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
+    convenience public init(bounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
         message: String, font: UIFont) {
             self.init(frame: bounds)
             self.textColor = textColor

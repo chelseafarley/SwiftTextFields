@@ -16,21 +16,21 @@ public class NumericTextField: UIValidationTextField, UITextFieldDelegate {
         self.keyboardType = UIKeyboardType.NumberPad
     }
     
-    convenience init(bounds: CGRect, overlayLabelBounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
+    convenience public init(bounds: CGRect, overlayLabelBounds: CGRect, textColor: UIColor, textAlignment : NSTextAlignment,
         message: String, font: UIFont, textXMargin: CGFloat) {
             self.init(frame: bounds)
             self.overlayView = UIOverlayLabel(bounds: overlayLabelBounds, textColor: textColor,
                 textAlignment: textAlignment,  message: message, font: font, textXMargin: textXMargin)
     }
     
-    convenience init(bounds: CGRect, overlayLabelBounds: CGRect,  textColor: UIColor, textAlignment : NSTextAlignment,
+    convenience public init(bounds: CGRect, overlayLabelBounds: CGRect,  textColor: UIColor, textAlignment : NSTextAlignment,
         message: String, font: UIFont) {
             self.init(frame: bounds)
             self.overlayView = UIOverlayLabel(bounds: overlayLabelBounds, textColor: textColor,
                 textAlignment: textAlignment, message: message, font: font)
     }
     
-    convenience init(bounds: CGRect, overlayView: UIView) {
+    convenience public init(bounds: CGRect, overlayView: UIView) {
         self.init(frame: bounds)
         self.overlayView = overlayView
     }
