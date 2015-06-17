@@ -90,18 +90,20 @@ typedef struct _NSZone NSZone;
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIColor;
+@class UIFont;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15SwiftTextFields21UIValidationTextField")
 @interface UIValidationTextField : UITextField
 - (BOOL)validateInput;
 - (void)showOrHideOverlay;
+@property (nonatomic) UIColor * __nonnull messageColor;
+@property (nonatomic) UIFont * __nonnull messageFont;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIColor;
-@class UIFont;
 @class UIView;
 
 SWIFT_CLASS("_TtC15SwiftTextFields19CompulsoryTextField")
@@ -111,6 +113,7 @@ SWIFT_CLASS("_TtC15SwiftTextFields19CompulsoryTextField")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithBounds:(CGRect)bounds overlayView:(UIView * __nonnull)overlayView;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)textField:(UITextField * __nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * __nonnull)string;
+@property (nonatomic, copy) NSString * __nonnull message;
 @end
 
 
@@ -121,6 +124,7 @@ SWIFT_CLASS("_TtC15SwiftTextFields16NumericTextField")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithBounds:(CGRect)bounds overlayView:(UIView * __nonnull)overlayView;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)textField:(UITextField * __nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * __nonnull)string;
+@property (nonatomic, copy) NSString * __nonnull message;
 @end
 
 
