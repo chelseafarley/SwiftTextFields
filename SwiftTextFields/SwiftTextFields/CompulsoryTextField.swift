@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CompulsoryTextField: UIValidationTextField, UITextFieldDelegate {
+@IBDesignable public class CompulsoryTextField: UIValidationTextField, UITextFieldDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -60,5 +60,11 @@ public class CompulsoryTextField: UIValidationTextField, UITextFieldDelegate {
         
         showOrHideOverlay()
         return true
+    }
+    
+    @IBInspectable public var message : String = "Please enter a value" {
+        didSet {
+            (overlayView as! UIOverlayLabel).text = message
+        }
     }
 }

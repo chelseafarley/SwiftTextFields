@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class UIValidationTextField: UITextField {
+@IBDesignable public class UIValidationTextField: UITextField {
     var overlayView : UIView!
     var isValid = true
     
@@ -23,6 +23,18 @@ public class UIValidationTextField: UITextField {
         } else if (!isValid && rightView == nil) {
             rightView = overlayView
             rightViewMode = UITextFieldViewMode.Always
+        }
+    }
+    
+    @IBInspectable public var messageColor : UIColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1) {
+        didSet {
+            (overlayView as! UIOverlayLabel).textColor = messageColor
+        }
+    }
+    
+    @IBInspectable public var messageFont : UIFont = UIFont.systemFontOfSize(10) {
+        didSet {
+            (overlayView as! UIOverlayLabel).font = messageFont
         }
     }
 }

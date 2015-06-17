@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NumericTextField: UIValidationTextField, UITextFieldDelegate {
+@IBDesignable public class NumericTextField: UIValidationTextField, UITextFieldDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -62,6 +62,12 @@ public class NumericTextField: UIValidationTextField, UITextFieldDelegate {
             isValid = false
             showOrHideOverlay()
             return true
+        }
+    }
+    
+    @IBInspectable public var message : String = "Please enter a numeric value" {
+        didSet {
+            (overlayView as! UIOverlayLabel).text = message
         }
     }
 }
