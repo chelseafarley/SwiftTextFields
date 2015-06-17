@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E0300F41B2FFC2A008DE55A /* SwiftTextFields.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */; };
-		5E0300F51B2FFC2A008DE55A /* SwiftTextFields.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E0B52B71B317295000F900B /* SwiftTextFields.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0B52B61B317295000F900B /* SwiftTextFields.framework */; };
+		5E0B52B81B317295000F900B /* SwiftTextFields.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0B52B61B317295000F900B /* SwiftTextFields.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EC5BDE21B25A1D40007E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE11B25A1D40007E286 /* AppDelegate.swift */; };
 		5EC5BDE41B25A1D50007E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE31B25A1D50007E286 /* ViewController.swift */; };
 		5EC5BDE71B25A1D50007E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC5BDE51B25A1D50007E286 /* Main.storyboard */; };
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E0300F51B2FFC2A008DE55A /* SwiftTextFields.framework in Embed Frameworks */,
+				5E0B52B81B317295000F900B /* SwiftTextFields.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftTextFields.framework; sourceTree = "<group>"; };
+		5E0B52B61B317295000F900B /* SwiftTextFields.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftTextFields.framework; sourceTree = "<group>"; };
 		5EC5BDDC1B25A1D40007E286 /* SwiftTextFieldsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTextFieldsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC5BDE01B25A1D40007E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC5BDE11B25A1D40007E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0300F41B2FFC2A008DE55A /* SwiftTextFields.framework in Frameworks */,
+				5E0B52B71B317295000F900B /* SwiftTextFields.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		5EC5BDD31B25A1D40007E286 = {
 			isa = PBXGroup;
 			children = (
-				5E0300F31B2FFC2A008DE55A /* SwiftTextFields.framework */,
+				5E0B52B61B317295000F900B /* SwiftTextFields.framework */,
 				5EC5BDDE1B25A1D40007E286 /* SwiftTextFieldsSample */,
 				5EC5BDF41B25A1D50007E286 /* SwiftTextFieldsSampleTests */,
 				5EC5BDDD1B25A1D40007E286 /* Products */,
